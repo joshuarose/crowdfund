@@ -1,0 +1,28 @@
+<article >
+  <header>
+    <h1><%= @project.name %></h1>
+  </header>
+  <p>
+    <%= @project.description %>
+  </p>
+  <h3>
+    Target Pledge:
+  </h3>
+  <p>
+    <%= number_to_currency @project.target_pledge_amount %>
+  </p>
+  <h3>
+    Website:
+  </h3>
+  <p>
+    <%= @project.website %>
+  </p>
+  <h3>
+    Pledge End date:
+  </h3>
+  <p>
+    <%= @project.pledging_ends_on %>
+  </p>
+</article>
+
+<%= link_to "All Projects", root_path %>
