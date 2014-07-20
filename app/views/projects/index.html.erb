@@ -3,7 +3,7 @@
 <% @projects.each do |project| %>
 <article>
   <header>
-    <%= project.name %>
+    <%= link_to project.name, project %>
   </header>
   <p>
     <%= truncate(project.description, length: 35, seperator: ' ') %>
